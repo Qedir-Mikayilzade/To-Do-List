@@ -1,0 +1,219 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+    background-color: rgb(136, 255, 239);
+    position: relative;
+}
+
+.main {
+    /*umumi div*/
+    margin: 80px auto;
+    padding-bottom: 0;
+    width: 350px;
+    border-radius: 12px;
+    border: 1px solid grey;
+}
+
+.yellow-line {
+    width: 100%;
+    background-color: rgb(253, 199, 19);
+    height: 35px;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.content {
+    /*fonu ag olan div*/
+    position: relative;
+    padding: 24px 24px 16px 24px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 0px 12px 12px;
+}
+
+h1 {
+    margin: 0px auto;
+    text-align: center;
+}
+
+.sort {
+    border: 1px solid rgb(206, 206, 206);
+    width: 30px;
+    height: 18px;
+    position: relative;
+    left: 269px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.input {
+    margin-top: 0px;
+    padding-left: 15px;
+    padding-right: 35px;
+    width: 300px;
+    height: 40px;
+    border-radius: 12px;
+    border: 1px solid grey;
+}
+
+.clear-input {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 107px;
+    left: 287px;
+    cursor: pointer;
+}
+
+.checked {
+    text-decoration: line-through;
+}
+
+.clear-item-btn {
+    margin-top: 1px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.clear-item-btn:hover {
+    background-color: rgb(214, 4, 4);
+}
+
+.clear-item-img {
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
+    background-color: transparent;
+    color: green;
+    border: none;
+}
+
+
+.siyahi {
+    border: 1px solid grey;
+    width: 300px;
+    border-radius: 12px;
+    display: none;
+    padding: 2px;
+}
+
+li {
+    width: 100%;
+    padding: 4px 12px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    width: 100%;
+    text-wrap: wrap;
+}
+
+.btns {
+    /*bu "+" ve "add" butonlari yerlesen divdi*/
+    display: flex;
+    margin: 10px auto 0px;
+    align-self: flex-end;
+}
+
+.btn {
+    color: white;
+    border: 1px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.plus {
+    display: flex;
+    border-radius: 40px;
+    width: 40px;
+    font-size: 25px;
+    position: relative;
+    left: 21px;
+    background-color: rgb(167, 78, 250);
+    padding-left: 12px;
+}
+
+.add {
+    width: 130px;
+    border-radius: 0px 40px 40px 0px;
+    font-size: 20px;
+    background-color: blueviolet;
+}
+
+.clicked {
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    width: 40px;
+    height: 60px;
+    border-radius: 8px;
+    border: 1px solid red;
+    background-color: red;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.trash {
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    width: 40px;
+    height: 60px;
+    border-radius: 8px;
+    border: 1px solid rgb(167, 78, 250);
+    background-color: rgb(167, 78, 250);
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.trash:hover{
+    background-color: rgb(253, 199, 19);
+    border: 1px solid rgb(253, 199, 19);
+    transform: scale(1.07);
+}
+
+.trash-box {
+    top: 100px;
+    right: 50px;
+    width: 400px;
+    min-height: 100px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 12px;
+    position: absolute;
+    margin: auto;
+    box-shadow: 10px 10px 70px black;
+}
+
+.trash-item {
+    padding: 10px 25px;
+}
+
+.trash-img {
+    width: 30px;
+}
+
+h2 {
+    text-align: center;
+}

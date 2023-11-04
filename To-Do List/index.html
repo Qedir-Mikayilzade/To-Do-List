@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="yellow-line"></div>
+        <div class="content">
+            <h1>To-do List</h1>
+            <button class="sort">
+                <img class="sort-icon" src="./icons/artan.svg" alt=""></button><br>
+            <input class="input" type="text" name="#" id="#"><button class="clear-input">
+                <img src="./icons/clear-input.svg" alt=""></button><br>
+            <div class="siyahi">
+                <ul></ul>
+            </div>
+            <div class="btns">
+                <button class="plus btn">+</button>
+                <button class="add btn">Add</button>
+            </div> 
+        </div>
+    </div>
+    <button class="trash" id="trash"><img src="./icons/trash.svg" alt="trash-icon" class="trash-img"></button>
+    <div style="display: none" class="trash-box">
+        <h2>Trash</h2>
+        <ul class="trash-list">
+        </ul>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
